@@ -7,10 +7,17 @@ int random(int a, int b){
 
 int main() {
 	srand(time(0));
-	int n=random(50, 100);
+	int n=random(10, 30);
 	cout<<n<<endl;
-	for(int i=1;i<=n;i++){
-		cout<<random(-10, 10)<<' '<<random(-10, 10)<<endl;
+	int cnt=0;
+	set<int> s;
+	while(cnt<n){
+		int temp=random(-50, 50);
+		if(s.find(temp)==s.end()){
+			s.insert(temp);
+			cnt++;
+			cout<<temp<<' '<<random(-50, 50)<<endl;
+		}
 	}
 	cout<<random(1, 5)<<endl;
 	return 0;

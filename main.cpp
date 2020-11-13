@@ -1,5 +1,6 @@
 #include <iostream>
 #include "./src/points.h"
+#include <math.h>
 #ifndef MATRIX
 	#define MATRIX
 	#include "./src/matrix.h"
@@ -38,12 +39,13 @@ int main(){
 
 	for(int i=0;i<b.getN();i++){
 		cout<<b.get(i, 0)<<"x^"<<i;
-		if(i<b.getN()-1)
+		if(i<b.getN()-1){
 			cout<<" + ";
+		}
 	}
 	cout<<endl;
 	
 	cout<<"\nThe cost would be: ";
-	cout<<cost(Y, Z)<<endl;
+	cout<<sqrt(cost(Y, Z)/p.getN())<<endl;
 	return 0;
 }

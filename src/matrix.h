@@ -120,6 +120,21 @@ matrix matrix::mul(matrix &a){
 
 matrix matrix::inverse(){
 	double det=determinant();
+	srand(time(0));
+	int cnt=0;
+	while(det==0){
+		int nn=rand()%n, mm=rand()%m;
+		double c=0.01;
+		if(rand()%2)
+			c*=-1;
+		set(nn, mm, get(nn, mm)+c);
+		det=determinant();
+		// display_pts();
+		cnt++;
+		if(cnt>100)
+			break;
+		// cout<<"--"<<endl;
+	}
 	if(det==0){
 		cout<<"inverse doesn't exist"<<endl;
 	}
