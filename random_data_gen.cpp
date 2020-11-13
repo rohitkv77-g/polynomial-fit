@@ -10,7 +10,7 @@ int main() {
 	int n=random(50, 100);
 	cout<<n<<endl;
 	for(int i=1;i<=n;i++){
-		cout<<random(-100, 100)<<' '<<random(-100, 100)<<endl;
+		cout<<random(-10, 10)<<' '<<random(-10, 10)<<endl;
 	}
 	cout<<random(1, 5)<<endl;
 	return 0;

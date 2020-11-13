@@ -26,6 +26,7 @@ int main(){
 	cin>>d;
 	
 	matrix X=p.matX(d);
+	// X.display_pts();
 	matrix Y=p.matY();
 
 	matrix T=X.trans();
