@@ -6,4 +6,4 @@ use generator to generate random test data
 
 compile main.cpp and run on test data
 - g++ main.cpp -o main.out
-- main.out < data
+- ./main.out < data
