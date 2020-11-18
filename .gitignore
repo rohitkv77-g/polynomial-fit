@@ -1,3 +1,6 @@
 *.out
 *.txt
 splitter.cpp
+a.exe
+temp.cpp
+in.txt
