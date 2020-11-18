@@ -42,7 +42,7 @@ int main()
 
 	for (int i = 0; i < b.getN(); i++)
 	{
-		cout << b.get(i, 0) << "x^" << i;
+		cout << '(' << b.get(i, 0) << ')' << "x^" << i;
 		if (i < b.getN() - 1)
 		{
 			cout << " + ";
